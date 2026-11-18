@@ -1,0 +1,17 @@
+{
+  "name": "grokbot-unlock",
+  "version": "0.1.0",
+  "description": "Client-side feature-flag unlocker for the Grok Bot desktop app, plus native flight cards for flight lists.",
+  "main": "unlock.js",
+  "bin": { "grokbot-unlock": "unlock.js" },
+  "scripts": {
+    "start": "./grokbot-unlock.sh",
+    "list": "node unlock.js --list",
+    "reset": "node unlock.js --reset"
+  },
+  "keywords": ["grok", "grok-bot", "xai", "electron", "feature-flags", "statsig", "cdp"],
+  "author": "Sina Matian",
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "dependencies": { "ws": "^8.23.0" }
+}

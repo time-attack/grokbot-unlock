@@ -1,0 +1,48 @@
+{
+  "_comment": "Gates in 'never' are skipped unless you run with --all. They either move money, hide things you need, pause the app, or change networking.",
+  "never": [
+    "grok_bot_purchase_auto_approve",
+    "grok_bot_link_token_charged_via_link_desktop",
+    "grok_bot_spend_approval_passkey",
+    "grok_bot_x_money_spend_challenge_desktop",
+    "sand_client_pause",
+    "sand_system_proxy_auto",
+    "sand_system_proxy_auto_kill_switch",
+    "sand_hide_at_mentions",
+    "sand_hide_slash_commands",
+    "grok_bot_hide_custom_connector_add",
+    "grok_bot_hide_personal_slack_add",
+    "grok_bot_desktop_free_user_upgrade_cta",
+    "sand_onboarding_attribution_survey_kill_switch",
+    "grok_bot_pre_share_interruptive_modal",
+    "grok_bot_access_grants_only",
+    "sand_tool_allowlist",
+    "grok_bot_desktop_blocked_connectors",
+    "sand_desktop_present_park",
+    "sand_desktop_away_park",
+    "sand_scheduled_computer_updates",
+    "grok_bot_untrusted_team_memory"
+  ],
+  "forceOff": [],
+  "extraOn": ["shared_bots", "tasks_page", "team_bots", "unified_billing"],
+  "dynamicConfigs": {
+    "sand_tasks_config": {
+      "enabled": true,
+      "page_enabled": true,
+      "peek_enabled": true,
+      "composer_enabled": true,
+      "team_bots_enabled": true,
+      "automation_tasks_enabled": true,
+      "tags_enabled": true,
+      "sidebar_view_enabled": true,
+      "message_membership_enabled": true
+    },
+    "sand_usage_breakdown": { "enabled": true, "enabled_v2": true, "include_credits": true }
+  },
+  "snapshotFlags": {
+    "onboardingJobRoleEnabled": true,
+    "onboardingRoleUseCaseBotsEnabled": true,
+    "onboardingConnectorStepEnabled": true,
+    "shoppingTryOnExperimentEnabled": true
+  }
+}
